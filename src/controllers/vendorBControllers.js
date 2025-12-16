@@ -1,4 +1,4 @@
-// Data Vendor B (Distro Modern - CamelCase, Type-Safe)
+// Data Vendor B
 exports.getVendorB = (req, res) => {
 const dataB = [
   {

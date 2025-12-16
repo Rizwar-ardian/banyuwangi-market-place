@@ -3,7 +3,6 @@ const vendorBController = require("./vendorBControllers");
 const vendorCController = require("./vendorCController");
 
 exports.getIntegratedProducts = (req, res) => {
-  // Simulate fetching data from all vendors
   const vendorAData = [
     {
       kd_produk: "A001",
