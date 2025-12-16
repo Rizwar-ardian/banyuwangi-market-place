@@ -1,6 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const vendorController = require("../controllers/vendorBControllers");
+const vendorCController = require("../controllers/vendorCController");
 
 // Define route for getting Vendor b data
 router.get("/vendor-b", vendorController.getVendorB);
