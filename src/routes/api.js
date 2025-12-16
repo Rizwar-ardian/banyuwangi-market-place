@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
 const vendorAController = require("../controllers/vendorAControllers");
-const vendorBController = require("../controllers/vendorBControllers");
-const vendorCController = require("../controllers/vendorCController");
+const vendorBController = require("../controllers/vendorB_Controllers");
+const vendorCController = require("../controllers/vendorC_Controller");
 const integratorController = require("../controllers/integratorController");
 
 // Mendefinisikan route untuk mendapatkan data Vendor A

@@ -1,6 +1,6 @@
-const vendorAController = require("./vendorAControllers");
-const vendorBController = require("./vendorBControllers");
-const vendorCController = require("./vendorCController");
+const vendorAController = require("./vendorA_Controllers");
+const vendorBController = require("./vendorB_Controllers");
+const vendorCController = require("./vendorC_Controller");
 
 exports.getIntegratedProducts = (req, res) => {
   const vendorAData = [
