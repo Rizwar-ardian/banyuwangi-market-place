@@ -1,6 +1,6 @@
 // Function untuk mendapatkan data Vendor A
-exports.getVendorA = (req, res) => {
-  const vendorAData = [
+const getVendorAData = () => {
+  return [
     {
       kd_produk: "A001",
       nm_brg: "Kopi Bubuk 100g",
@@ -8,6 +8,10 @@ exports.getVendorA = (req, res) => {
       ket_stok: "ada", // "ada" or "habis"
     },
   ];
-  res.json(vendorAData);
 };
-  
+
+exports.getVendorAData = getVendorAData;
+
+exports.getVendorA = (req, res) => {
+  res.json(getVendorAData());
+};

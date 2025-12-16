@@ -3,44 +3,9 @@ const vendorBController = require("./vendorB_Controllers");
 const vendorCController = require("./vendorC_Controller");
 
 exports.getIntegratedProducts = (req, res) => {
-  const vendorAData = [
-    {
-      kd_produk: "A001",
-      nm_brg: "Kopi Bubuk 100g",
-      hrg: "15000",
-      ket_stok: "ada",
-    },
-  ];
-
-  const vendorBData = [
-    {
-      sku: "TSHIRT-001",
-      productName: "Kaos Ijen Crater",
-      price: 75000,
-      isAvailable: true,
-    },
-    {
-      sku: "HAT-002",
-      productName: "Topi Trucker",
-      price: 50000,
-      isAvailable: false,
-    },
-  ];
-
-  const vendorCData = [
-    {
-      id: 501,
-      details: {
-        name: "Nasi Tempong",
-        category: "Food",
-      },
-      pricing: {
-        base_price: 20000,
-        tax: 2000,
-      },
-      stock: 50,
-    },
-  ];
+  const vendorAData = vendorAController.getVendorAData();
+  const vendorBData = vendorBController.getVendorBData();
+  const vendorCData = vendorCController.getVendorCData();
 
   const integratedData = [];
 

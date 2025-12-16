@@ -1,6 +1,6 @@
 // Function untuk mendapatkan data Vendor C
-exports.getVendorC = (req, res) => {
-  const vendorCData = [
+const getVendorCData = () => {
+  return [
     {
       id: 501,
       details: {
@@ -14,5 +14,10 @@ exports.getVendorC = (req, res) => {
       stock: 50,
     },
   ];
-  res.json(vendorCData);
+};
+
+exports.getVendorCData = getVendorCData;
+
+exports.getVendorC = (req, res) => {
+  res.json(getVendorCData());
 };
