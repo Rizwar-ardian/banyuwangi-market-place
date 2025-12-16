@@ -1,8 +1,3 @@
-/**
- * Controller for Vendor A (Warung Legacy)
- * Simulates legacy system with String data types.
- */
-
 exports.getVendorA = (req, res) => {
   const vendorAData = [
     {

@@ -1,10 +1,6 @@
-/**
- * Controller for Vendor related operations
- */
-
-// Function to handle getting Vendor C data
+// Function untuk mendapatkan data Vendor C
 exports.getVendorC = (req, res) => {
-  // Simulated data structure for Vendor C
+  // Struktur data simulasi untuk Vendor C
   const vendorCData = [
     {
       id: 501,
@@ -20,6 +16,6 @@ exports.getVendorC = (req, res) => {
     },
   ];
 
-  // Return the data as JSON
+  // Mengembalikan data sebagai JSON
   res.json(vendorCData);
 };
