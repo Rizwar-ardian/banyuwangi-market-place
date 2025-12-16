@@ -1,3 +1,4 @@
+// Function untuk mendapatkan data Vendor A
 exports.getVendorA = (req, res) => {
   const vendorAData = [
     {
