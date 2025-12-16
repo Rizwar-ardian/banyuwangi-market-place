@@ -1,6 +1,5 @@
 // Function untuk mendapatkan data Vendor C
 exports.getVendorC = (req, res) => {
-  // Struktur data simulasi untuk Vendor C
   const vendorCData = [
     {
       id: 501,
@@ -15,7 +14,5 @@ exports.getVendorC = (req, res) => {
       stock: 50,
     },
   ];
-
-  // Mengembalikan data sebagai JSON
   res.json(vendorCData);
 };
