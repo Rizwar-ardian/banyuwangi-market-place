@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const vendorAController = require("../controllers/vendorAControllers");
+const vendorAController = require("../controllers/vendorA_Controllers");
 const vendorBController = require("../controllers/vendorB_Controllers");
 const vendorCController = require("../controllers/vendorC_Controller");
 const integratorController = require("../controllers/integratorController");
