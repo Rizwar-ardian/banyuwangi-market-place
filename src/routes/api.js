@@ -1,8 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const vendorController = require("../controllers/vendorAController");
-const vendorController = require("../controllers/vendorBControllers");
-const vendorController = require("../controllers/vendorCController");
+const vendorAController = require("../controllers/vendorA_Controllers");
+const vendorBController = require("../controllers/vendorB_Controllers");
+const vendorCController = require("../controllers/vendorC_Controllers");
 
 // Mendefinisikan route untuk mendapatkan data Vendor A
 router.get("/vendor-a", vendorAController.getVendorA);
@@ -11,6 +11,6 @@ router.get("/vendor-a", vendorAController.getVendorA);
 router.get("/vendor-b", vendorBController.getVendorB);
 
 // Mendefinisikan route untuk mendapatkan data Vendor C
-router.get("/vendor-c", vendorController.getVendorC);
+router.get("/vendor-c", vendorCController.getVendorC);
 
 module.exports = router;
