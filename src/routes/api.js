@@ -1,9 +1,8 @@
 const express = require("express");
 const router = express.Router();
-const vendorAController = require("../controllers/vendorA_Controllers");
-const vendorBController = require("../controllers/vendorB_Controllers");
-const vendorCController = require("../controllers/vendorC_Controller");
-const integratorController = require("../controllers/integratorController");
+const vendorController = require("../controllers/vendorAController");
+const vendorController = require("../controllers/vendorBControllers");
+const vendorController = require("../controllers/vendorCController");
 
 // Mendefinisikan route untuk mendapatkan data Vendor A
 router.get("/vendor-a", vendorAController.getVendorA);
@@ -12,9 +11,6 @@ router.get("/vendor-a", vendorAController.getVendorA);
 router.get("/vendor-b", vendorBController.getVendorB);
 
 // Mendefinisikan route untuk mendapatkan data Vendor C
-router.get("/vendor-c", vendorCController.getVendorC);
-
-// Mendefinisikan route untuk mendapatkan data terintegrasi
-router.get("/products", integratorController.getIntegratedProducts);
+router.get("/vendor-c", vendorController.getVendorC);
 
 module.exports = router;
