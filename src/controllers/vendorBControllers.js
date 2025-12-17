@@ -15,7 +15,5 @@ const dataB = [
   }
 
 ];
-res.json(vendorAData);
+res.json(dataB);
 }
-
-module.exports = dataB;
