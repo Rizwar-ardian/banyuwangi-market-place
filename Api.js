@@ -6,14 +6,13 @@ http
     res.on("data", (chunk) => {
       data += chunk;
     });
-    res.on("end", () => { 
+    res.on("end", () => {
       console.log(data);
     });
   })
   .on("error", (err) => {
     console.log("Error: " + err.message);
   });
-
 
 http
   .get("http://localhost:3000/api/vendor-b", (res) => {
@@ -21,7 +20,7 @@ http
     res.on("data", (chunk) => {
       data += chunk;
     });
-    res.on("end", () => { 
+    res.on("end", () => {
       console.log(data);
     });
   })
@@ -29,7 +28,7 @@ http
     console.log("Error: " + err.message);
   });
 
-  http
+http
   .get("http://localhost:3000/api/vendor-c", (res) => {
     let data = "";
     res.on("data", (chunk) => {
@@ -43,8 +42,8 @@ http
     console.log("Error: " + err.message);
   });
 
-  http
-  .get("http://localhost:3000/api/products", (res) => {
+http
+  .get("http://localhost:3000/api/integrator", (res) => {
     let data = "";
     res.on("data", (chunk) => {
       data += chunk;
